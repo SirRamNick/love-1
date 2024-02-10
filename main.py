@@ -20,6 +20,7 @@ def main():
     # Text input
     with st.form(key='my_form'):
         user_name = st.text_input("Enter username", "")
+        st.write('hint: "madlovejear"')
         password = st.text_input("Enter password", "", type="password")
         submitted = st.form_submit_button("Submit")
 
