@@ -25,19 +25,22 @@ def main():
         submitted = st.form_submit_button("Submit")
 
         if submitted:
-            response = st.text_input("(yes/no)", "").lower()
+            if user_name == 'ramlovejade' and password == 'iloveyoulove06':
+                response = st.text_input("(yes/no)", "").lower()
 
-            if response == 'yes':
-                st.markdown("## yeheyyyy 👉👌")
-            elif response == 'no':
-                st.markdown('## you mean yes? -_-')
-            elif response == 'luh':
-                st.markdown('## luh i love you')
+                if response == 'yes':
+                    st.markdown("## yeheyyyy 👉👌")
+                elif response == 'no':
+                    st.markdown('## you mean yes? -_-')
+                elif response == 'luh':
+                    st.markdown('## luh i love you')
 
-            result = get_result(user_name.lower(), password.lower(), response)
-            st.markdown("## From adi 🌻")
-            st.write(result)
-            st.write("From your adi")
+                result = get_result(user_name.lower(), password.lower(), response)
+                st.markdown("## From adi 🌻")
+                st.write(result)
+                st.write("From your adi")
+            else:
+                st.write('Wrong credentials your not my babi')
 
 
 
