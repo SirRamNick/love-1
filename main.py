@@ -24,7 +24,7 @@ def main():
         submitted = st.form_submit_button("Submit")
 
         if submitted:
-            response = st.text_input("(yes/no)", "")
+            response = st.text_input("(yes/no)", "").lower()
 
             if response == 'yes':
                 st.markdown("## yeheyyyy 👉👌")
@@ -33,7 +33,7 @@ def main():
             elif response == 'luh':
                 st.markdown('## luh i love you')
 
-            result = get_result(user_name, password, response)
+            result = get_result(user_name.lower(), password.lower(), response)
             st.markdown("## From adi 🌻")
             st.write(result)
             st.write("From your adi")
