@@ -40,7 +40,7 @@ def main():
                 st.write(result)
                 st.write("From your adi")
             else:
-                st.write('Wrong credentials your not my babi')
+                st.markdown('## Wrong credentials your not my babi')
 
 
 
