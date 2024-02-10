@@ -25,7 +25,7 @@ def main():
         submitted = st.form_submit_button("Submit")
 
         if submitted:
-            if user_name == 'ramlovejade' and password == 'iloveyoulove06':
+            if user_name.lower() == 'ramlovejade' and password.lower() == 'iloveyoulove06':
                 response = st.text_input("(yes/no)", "").lower()
 
                 if response == 'yes':
