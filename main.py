@@ -29,7 +29,7 @@ def main():
                 response = st.text_input("(yes/no)", "").lower()
 
                 if response == 'yes':
-                    st.markdown("## yeheyyyy 👉👌")
+                    st.markdown("## I'll see you on Feb 14! 💙")
                 elif response == 'no':
                     st.markdown('## you mean yes? -_-')
                 elif response == 'luh':
